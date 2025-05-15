@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    # environment:  this is used instead of env:  when environments used in git action for example testing environment
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.wv9hqky.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
