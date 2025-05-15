@@ -9,9 +9,9 @@ env:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster.14sd.mongodb.nets
-      MONGODB_USERNAME: davita
-      MONGODB_PASSWORD: armakvsparoli
+      MONGODB_CLUSTER_ADDRESS: cluster0.wv9hqky.mongodb.net
+      MONGODB_USERNAME: funkymonksarmy
+      MONGODB_PASSWORD: FyeviSRch1mYhgUE
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
@@ -37,5 +37,5 @@ jobs:
     steps:
       - name: Output information
         run: |
-          echo "This varuable will not "
+          echo "This varuable will not: $MONGODB_USERNAME"
           echo "MongoDB NAME: $MONGODB_DB_NAME"
